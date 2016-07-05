@@ -1,6 +1,6 @@
 /* 
  * File:   main.cpp
- * Author: Dr. Mark E. Lehr
+ * Author: Antonio Gonzalez
  * Created on June 20, 2016, 6:51 PM
  * Purpose:  First Program
  */
