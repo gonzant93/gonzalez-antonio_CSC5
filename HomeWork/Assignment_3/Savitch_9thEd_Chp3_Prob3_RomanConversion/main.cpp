@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
     unsigned char n1000s,n100s,n10s,n1s;
     
     //Input Data
-    cout<<"Input a number from100to300to convert"<<endl;
+    cout<<"Input a number from 100 to 300 to convert"<<endl;
     cout<<"To a Roman Numeral"<<endl;
     cin>>x;
     

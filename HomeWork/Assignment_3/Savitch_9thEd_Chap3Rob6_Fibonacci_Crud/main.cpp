@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Antonio Gonzalez
  * Created on June 30, 2016, 2:51 PM
- * Purpose:  First Program
+ * Purpose:  Fibonacci 
  */
 
 //System Libraries
