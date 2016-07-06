@@ -21,8 +21,6 @@ int main(int argc, char** argv) {
     //Declare Variables
     float pv,fv,invRate,depRate,deposit,salary,retSav;
     
-    
-    
     //Input Data
     cout<<"Input Salary $'s, the the deposit %, interest rate in %";
     cout<<"Years in (yrs)"<<endl;
@@ -37,13 +35,13 @@ int main(int argc, char** argv) {
     
     //Loop to Display the yearly result
     cout<<fixed;
-    cout<<"Your Salary =           $"<<setprecision(2)<<salary<<endl;
+    cout<<"Your Salary           = $"<<setprecision(2)<<salary<<endl;
     cout<<"Yearly Bond Purchase  = $"<<setprecision(2)<<deposit<<endl;
     cout<<"Savings at Retirement = $"<<setprecision(2)<<retSav<<endl;
     cout<<"Table Produced with Investment Rate = "<<setprecision(2)
             <<invRate*100<<"% interest"<<endl;
     cout<<"Year    Date    Savings $ "<<endl;
-    int year=0;dateYr=2016;
+    int year=0,dateYr=2016;
     do{
         cout<<setw(4)<<year<<setw(7)<<dateYr<<setw(12)<<setprecision(2)<<fv<<endl;
         fv*=(1+invRate);//
