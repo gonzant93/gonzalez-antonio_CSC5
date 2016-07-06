@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Antonio Gonzalez
  * Created on June 23, 2016, 2:10 PM
- * Purpose: First Program 
+ * Purpose: Rainfall 
  */
 
 //System Libraries
