@@ -18,7 +18,7 @@ using namespace std; //Namespace of the System Libraries
 //Execution Begins Here!
 int main(int argc, char** argv) {
     //Declare Variables
-    float msMass=35;//35 grams Mass of the mouse 
+    float msMass=35;
     float msKill=5; //5 Grams of sweetener kill the mouse
     float hmMass=45400;//Grams or about 100 lb person
     float msSoda=350;//350 grams is the mass of soda can content
@@ -32,7 +32,7 @@ int main(int argc, char** argv) {
     
     //Output the processed Data
     cout<<"The number of cans that a dieter with mass = ";
-    cout<<hmMass<<"(grams) may consume is = "<<nCans<<"(cans)";
+    cout<<hmMass<<"(grams) may consume is ="<<nCans<<"(cans)";
     cout<<endl;
     
     //Exit Stage Right!
