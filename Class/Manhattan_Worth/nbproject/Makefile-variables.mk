@@ -7,13 +7,13 @@ CND_BASEDIR=`pwd`
 CND_BUILDDIR=build
 CND_DISTDIR=dist
 # Debug configuration
-CND_PLATFORM_Debug=Cygwin_4.x-Windows
-CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_4.x-Windows
+CND_PLATFORM_Debug=GNU-MacOSX
+CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-MacOSX
 CND_ARTIFACT_NAME_Debug=manhattan_worth
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/manhattan_worth
-CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_4.x-Windows/package
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/manhattan_worth
+CND_PACKAGE_DIR_Debug=dist/Debug/GNU-MacOSX/package
 CND_PACKAGE_NAME_Debug=manhattanworth.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/package/manhattanworth.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/manhattanworth.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin_4.x-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_4.x-Windows
