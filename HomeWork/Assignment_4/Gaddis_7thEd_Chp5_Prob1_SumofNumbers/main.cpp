@@ -21,27 +21,29 @@ using namespace std;//iostream uses the standard namespace
 int main(int argc, char** argv) {
     //Declare variables, no doubles
     int sum=0,num;
+    char answer; 
   
   
     //Input data
-    cout<<"Enter a positive integer "<<endl;
-    cin>>num;
+    do{
+        cout<<"Enter a positive integer "<<endl;
+        cin>>num;
+        
+        if (num<0){
+                cout<<"Please enter positive integers only!"<<endl;
+            }else{
+            for (int i=1; i<=num; i++){
+                sum+=i;
+                }
+            cout<<"Sum of all integers = "<<sum<<endl; 
+            }
+        //Output data
+         cout<<endl;
+         cout<<"Would you like to run this program again? Type Y for yes "<<endl;
+         cin>>answer;
+        }while(answer=='Y');
     
-    if (num<0){
-        cout<<"Please enter positive integers only!"<<endl;
-    }
-       
-    else
-    {
-    for (int i=1; i<=num; i++){
-        sum+=i;
-        }
-    
-    //Process data
-    
-    //Output data
-    cout<<"Sum of all integers = "<<sum<<endl;
-    } 
+     
     //Exit Stage Right
     return 0;
 }
