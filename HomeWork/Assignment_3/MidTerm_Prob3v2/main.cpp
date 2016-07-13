@@ -7,7 +7,9 @@
 
 //System Libraries
 #include <iostream>  //Input/Output Library
-
+#include <cstring>
+#include <iomanip> //
+ 
 using namespace std; //Namespace of the System Libraries
 
 //User Libraries
@@ -21,24 +23,43 @@ int main(int argc, char** argv) {
     //Declare Variables
     unsigned short x;
     unsigned char n1000s,n100s,n10s,n1s;
+    const int SIZE = 25; 
+    char date[25],accHol[25],paye[25]; 
     
     //Input Data
-    cout<<"Amount: "<<endl;
+    cout<<"Would like to write a check? Input the following: "<<endl;
+    cout<<"Date: "<<endl; 
+    cin.getline(date,25);
+    cout<<"Payee: "<<endl; 
+    cin.getline(paye,25);
+    cout<<"Account Holder: "<<endl;
+    cin.getline(accHol,25);
+    cout<<"Amount: "<<endl; 
     cin>>x;
+
     
-    //Process the Data
-    if (x<0||x>1999)return 1;
+    //Output
+    cout<<endl;
+    cout<<accHol<<endl; 
+    cout<<"STREET ADDRESS"<<endl;
+    cout<<"CITY, STATE  ZIP                            Date:  "<<date<<endl;
+    cout<<endl;
+    cout<<fixed<<setprecision(2)<<showpoint;
+    cout<<"Pay to the Order of:  "<<paye<<"              $"<<x*1.0f<<endl;
+    cout<<endl;
     
     //Output the processed Data
+    if (x<0||x>1999)return 1;
+    
     //Thousands Position
-    n1000s=(x-x%1000)/1000;
+    n1000s=(x-x%1000)/1000.0f;
     switch(n1000s){
         case 1:cout<<"One Thousand ";
     }
    
     //Hundreds Position
     x-=n1000s*1000; 
-    n100s=(x-x%100)/100;
+    n100s=(x-x%100)/100.0f;
      switch (n100s){
          case 9:cout<<"Nine Hundred ";break;
          case 8:cout<<"Eight Hundred ";break;
@@ -53,8 +74,8 @@ int main(int argc, char** argv) {
      
     //Tenths Position
     x-=n100s*100; 
-    n10s=(x-x%10)/10;
-     switch (n10s){
+    n10s=(x-x%10)/10.0f;  
+    switch (n10s){
          case 9:cout<<"Ninety ";break;
          case 8:cout<<"Eighty ";break;
          case 7:cout<<"Seventy ";break;
@@ -63,39 +84,54 @@ int main(int argc, char** argv) {
          case 4:cout<<"Fourty ";break;
          case 3:cout<<"Thirty ";break;
          case 2:cout<<"Twenty ";break;
-      }if(n10s>=11&&n10s<=19){
-          switch (n10s){
-             case 19:cout<<"Nineteen ";break;
-             case 18:cout<<"Eighteen ";break;
-             case 17:cout<<"Seventeen ";break;
-             case 16:cout<<"Sixteen ";break;
-             case 15:cout<<"Fifteen ";break;
-             case 14:cout<<"Fourteen ";break;
-             case 13:cout<<"Thirteen ";break;
-             case 12:cout<<"Tweleve ";break;
-             case 11:cout<<"Eleven ";break;
+         case 1:{
+             x-=n10s*10; 
+             n1s=(x-x%1)/1.0f;
+                switch(n1s){
+                 case 9:cout<<"Nineteen ";break;
+                 case 8:cout<<"Eighteen ";break;
+                 case 7:cout<<"Seventeen ";break;
+                 case 6:cout<<"Sixteen ";break;
+                 case 5:cout<<"Fifteen ";break;
+                 case 4:cout<<"Fourteen ";break;
+                 case 3:cout<<"Thirteen ";break;
+                 case 2:cout<<"Tweleve ";break;
+                 case 1:cout<<"Eleven ";break;
+                 case 0:cout<<"Ten ";break;
+               }
+                 
             }
-         }
-    x-=n100s*100; 
-    n10s=(x-x%10)/10;
-    switch (n10s){ 
-      case 1:cout<<"Ten";break;
-     }  
-         
+        }     
     //Ones Positions
-    x-=n10s*10; 
-    n1s=(x-x%1)/1;
-     switch (n1s){
-         case 9:cout<<"Nine ";break;
-         case 8:cout<<"Eight";break;
-         case 7:cout<<"Seven ";break;
-         case 6:cout<<"Six ";break;
-         case 5:cout<<"Five ";break;
-         case 4:cout<<"Four ";break;
-         case 3:cout<<"Three ";break;
-         case 2:cout<<"Two ";break;
-         case 1:cout<<"One ";break; 
-     }
+    if(n10s!=1){
+             x-=n10s*10; 
+             n1s=(x-x%1)/1.0f;
+         switch (n1s){
+             case 9:cout<<"Nine ";break;
+             case 8:cout<<"Eight";break;
+             case 7:cout<<"Seven ";break;
+             case 6:cout<<"Six ";break;
+             case 5:cout<<"Five ";break;
+             case 4:cout<<"Four ";break;
+             case 3:cout<<"Three ";break;
+             case 2:cout<<"Two ";break;
+             case 1:cout<<"One ";
+         }
+    }
+    
+    cout<<"and no/100s Dollars"<<endl;
+    cout<<endl;
+    cout<<"BANK OF CSC5"<<endl;
+    cout<<endl;
+    cout<<"FOR:  GOTTA PAY THE RENT	            "<<accHol<<endl;
+    
+    
+    
+    
+    
+    //Process the Data
+   
+  
     //Exit Stage Right!
     return 0;
 }

@@ -20,7 +20,7 @@ using namespace std; //Namespace of the System Libraries
 //Execution Begins Here!
 int main(int argc, char** argv) {
     //Declare Variables
-    float hrsWrkd=50;//Hours worked
+    float hrsWrkd=20.5;//Hours worked
     float payRate=10;//$s/hr
     char ovrTime=40;//Overtime starts at 40 hours
     float payChck;//Paycheck in $'s
