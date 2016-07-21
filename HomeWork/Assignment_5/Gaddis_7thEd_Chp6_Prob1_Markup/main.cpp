@@ -20,8 +20,7 @@ void calculateRetail(float,float);
 //Execution Begins Here!
 int main(int argc, char** argv) {
     //Declare Variables
-    float wValue;
-    float mPer;
+    float wValue,mPer;
     
     //Input Data
     cout<<setprecision(2)<<fixed<<showpoint;
@@ -32,12 +31,18 @@ int main(int argc, char** argv) {
    
     
     //Process the Data
-    calculateRetail(wValue,mPer);
+    if(wValue>=0||mPer>=0){
+        cout<<"Invalid Value "<<endl;
+    }else{
+        calculateRetail(wValue,mPer);
+    }
+        
+    
     return 0;
     
 }
     void calculateRetail(float wValue, float mPer)
     {
-        cout<<"Retail Value =$"<<((wValue*(mPer/100.0f))+wValue)<<endl;
+        cout<<"Retail Value = $"<<((wValue*(mPer/100.0f))+wValue)<<endl;
     }
     

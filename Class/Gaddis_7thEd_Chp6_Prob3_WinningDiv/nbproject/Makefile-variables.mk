@@ -9,11 +9,11 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-MacOSX
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-MacOSX
-CND_ARTIFACT_NAME_Debug=helloworld
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/helloworld
+CND_ARTIFACT_NAME_Debug=gaddis_7thed_chp6_prob3_winningdiv
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/gaddis_7thed_chp6_prob3_winningdiv
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-MacOSX/package
-CND_PACKAGE_NAME_Debug=helloworld.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/helloworld.tar
+CND_PACKAGE_NAME_Debug=gaddis7thedchp6prob3winningdiv.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/gaddis7thedchp6prob3winningdiv.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin_4.x-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_4.x-Windows
